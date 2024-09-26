@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnolato Personal Trainer</title>
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #3498db;
+            --accent-color: #f1c40f;
+            --text-color: #2c3e50;
+            --bg-color: #ecf0f1;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        header a:hover {
+            color: var(--accent-color);
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        header #branding h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #showcase {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+        }
+        #showcase h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        #showcase p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .page-content {
+            padding: 40px 0;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .page-content h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+        form button {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .service-item {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        /* Nuovi stili per i segnaposto delle immagini */
+        .img-placeholder {
+            background-color: #ddd;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .img-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .img-container .img-placeholder {
+            width: calc(33% - 10px);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Pregnolato Personal Trainer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#chi-sono">Chi Sono</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#galleria">Galleria</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home">
+        <section id="showcase">
+            <div class="container">
+                <div class="img-placeholder">
+                    Immagine di sfondo: Personal trainer che allena un cliente
+                </div>
+                <h1>Trasforma il Tuo Corpo, Cambia la Tua Vita</h1>
+                <p>Con Pregnolato, il tuo personal trainer di fiducia, raggiungi i tuoi obiettivi fitness</p>
+                <a href="#contatti" class="cta-button">Prenota una Consulenza Gratuita</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="chi-sono" class="page-content">
+        <div class="container">
+            <h2>Chi Sono</h2>
+            <div class="img-placeholder">
+                Foto professionale di Pregnolato
+            </div>
+            <p>Ciao, sono Pregnolato, personal trainer certificato con oltre 10 anni di esperienza nel settore del fitness e del benessere. La mia missione è aiutarti a raggiungere la migliore versione di te stesso, sia fisicamente che mentalmente. Con un approccio personalizzato e olistico, ti guiderò verso il raggiungimento dei tuoi obiettivi, che si tratti di perdere peso, aumentare la massa muscolare o migliorare la tua salute generale.</p>
+        </div>
+    </div>
+
+    <div id="servizi" class="page-content">
+        <div class="container">
+            <h2>I Miei Servizi</h2>
+            <div class="service-item">
+                <h3>Allenamento Personalizzato</h3>
+                <div class="img-placeholder">
+                    Immagine di una sessione di allenamento personalizzato
+                </div>
+                <p>Programmi di allenamento su misura per le tue esigenze e obiettivi specifici.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consulenza Nutrizionale</h3>
+                <div class="img-placeholder">
+                    Immagine di una consulenza nutrizionale
+                </div>
+                <p>Piani alimentari equilibrati per supportare il tuo percorso fitness e migliorare la tua salute.</p>
+            </div>
+            <div class="service-item">
+                <h3>Allenamenti di Gruppo</h3>
+                <div class="img-placeholder">
+                    Immagine di un allenamento di gruppo
+                </div>
+                <p>Sessioni energizzanti e motivanti in piccoli gruppi per chi ama l'atmosfera di squadra.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="galleria" class="page-content">
+        <div class="container">
+            <h2>Galleria</h2>
+            <div class="img-container">
+                <div class="img-placeholder">Immagine 1: Cliente che mostra i risultati</div>
+                <div class="img-placeholder">Immagine 2: Attrezzatura da palestra</div>
+                <div class="img-placeholder">Immagine 3: Sessione di allenamento all'aperto</div>
+                <div class="img-placeholder">Immagine 4: Preparazione di un pasto salutare</div>
+                <div class="img-placeholder">Immagine 5: Stretching post-allenamento</div>
+                <div class="img-placeholder">Immagine 6: Certificazioni professionali</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contatti" class="page-content">
+        <div class="container">
+            <h2>Contattami</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Il tuo messaggio o domanda" rows="5" required></textarea>
+                <button type="submit">Invia Messaggio</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
